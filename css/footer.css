@@ -33,7 +33,7 @@
 .footer .divider,
 .footer__bottom {
   position: relative;
-  z-index: 1;
+  z-index: var(--z-content);
 }
 
 /* ── Brand block — full width ─────────────────────────────── */
@@ -68,6 +68,7 @@
 .footer__social {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--space-3);
 }
 
@@ -161,7 +162,7 @@
 .footer .divider {
   background-color: var(--color-zinc-800);
   position: relative;
-  z-index: 1;
+  z-index: var(--z-content);
 }
 
 /* ── Bottom bar ───────────────────────────────────────────── */
@@ -173,7 +174,7 @@
   padding-top: var(--space-8);
   flex-wrap: wrap;
   position: relative;
-  z-index: 1;
+  z-index: var(--z-content);
 }
 
 .footer__copy {

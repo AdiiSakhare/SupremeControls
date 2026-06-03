@@ -357,8 +357,8 @@
   justify-content: center;
   align-items: center;
   gap: 5px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-sm);
   background: none;
   border: 1.5px solid var(--color-zinc-200);
@@ -538,4 +538,12 @@
   .navbar__mobile {
     display: none;
   }
+}
+
+/* ── Focus visible ────────────────────────────────────────── */
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: var(--btn-radius);
 }

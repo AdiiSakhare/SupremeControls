@@ -138,6 +138,7 @@
 
   /* ── Z-index scale ──────────────────────────────────────── */
   --z-base:     0;
+  --z-content:  1;   /* content above dark bg overlays */
   --z-raised:   10;
   --z-dropdown: 200;
   --z-sticky:   300;

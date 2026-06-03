@@ -177,3 +177,11 @@
     padding-bottom: var(--space-12);
   }
 }
+
+/* ── Focus visible ────────────────────────────────────────── */
+.hero a:focus-visible,
+.hero button:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

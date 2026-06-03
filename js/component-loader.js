@@ -228,6 +228,16 @@ const NAVBAR_HTML = `<header class="navbar" id="navbar" role="banner">
                     </div>
                   </a>
 
+                  <a href="/pages/products/custom-control-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <i data-lucide="sliders-horizontal" width="20" height="20"></i>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Custom Control Panels</span>
+                      <span class="navbar__mega-desc">Bespoke panels engineered to specification</span>
+                    </div>
+                  </a>
+
                 </div>
 
                 <div class="navbar__mega-footer">
@@ -310,6 +320,7 @@ const NAVBAR_HTML = `<header class="navbar" id="navbar" role="banner">
               <li><a href="/pages/products/plc-panels.html" class="navbar__mobile-sub-link">PLC Panels</a></li>
               <li><a href="/pages/products/vfd-panels.html" class="navbar__mobile-sub-link">VFD Panels</a></li>
               <li><a href="/pages/products/servo-panels.html" class="navbar__mobile-sub-link">Servo Panels</a></li>
+              <li><a href="/pages/products/custom-control-panels.html" class="navbar__mobile-sub-link">Custom Control Panels</a></li>
               <li><a href="/pages/products.html" class="navbar__mobile-sub-link navbar__mobile-sub-link--view-all">All Products →</a></li>
             </ul>
           </li>
@@ -371,6 +382,8 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
           <li><a href="/pages/products/mcc-panels.html" class="footer__link">MCC Panels</a></li>
           <li><a href="/pages/products/apfc-panels.html" class="footer__link">APFC Panels</a></li>
           <li><a href="/pages/products/plc-panels.html" class="footer__link">PLC Panels</a></li>
+          <li><a href="/pages/products/vfd-panels.html" class="footer__link">VFD Panels</a></li>
+          <li><a href="/pages/products/servo-panels.html" class="footer__link">Servo Panels</a></li>
           <li><a href="/pages/products/custom-control-panels.html" class="footer__link">Custom Control Panels</a></li>
         </ul>
       </div>
