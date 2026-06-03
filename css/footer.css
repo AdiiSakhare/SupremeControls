@@ -99,7 +99,7 @@
 /* ── 5-column links row ───────────────────────────────────── */
 .footer__links-row {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-10);
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);

@@ -399,16 +399,6 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
         </ul>
       </div>
 
-      <!-- Connect -->
-      <div class="footer__col">
-        <h3 class="footer__col-title">Connect</h3>
-        <ul class="footer__col-list" role="list">
-          <li><a href="https://linkedin.com" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="mailto:vvj.supreme@gmail.com" class="footer__link">Email Us</a></li>
-          <li><a href="/pages/contact.html" class="footer__link">Get a Quote</a></li>
-        </ul>
-      </div>
-
       <!-- Contact -->
       <div class="footer__col">
         <h3 class="footer__col-title">Contact</h3>
@@ -437,13 +427,17 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
               supremeenterprises1970@gmail.com
             </a>
           </li>
-          <li class="footer__link footer__link--contact" style="pointer-events:none;cursor:default;">
-            <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
-            Bhosari, Pune 411039
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bhosari+Pune+411039" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
+              Bhosari, Pune 411039
+            </a>
           </li>
-          <li class="footer__link footer__link--contact" style="pointer-events:none;cursor:default;">
-            <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
-            MIDC, Pune 411026
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&query=MIDC+Pune+411026" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
+              MIDC, Pune 411026
+            </a>
           </li>
         </ul>
       </div>
