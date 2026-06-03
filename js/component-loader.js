@@ -428,15 +428,15 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/maps/search/?api=1&query=Bhosari+Pune+411039" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps/search/?api=1&query=Sr+No+229%2F2+Gajanan+Housing+Society+Khandoba+Mal+Bhosari+Pune+411039" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
               <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
-              Bhosari, Pune 411039
+              Office — Sr. No. 229/2, Gajanan Hsg. Soc., Khandoba Mal, Bhosari, Pune 411039
             </a>
           </li>
           <li>
-            <a href="https://www.google.com/maps/search/?api=1&query=MIDC+Pune+411026" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.google.com/maps/search/?api=1&query=Rajguru+Industrial+Co-op+Society+Plot+106%2F2+T-Block+Shop+26-B+MIDC+Pune+411026" class="footer__link footer__link--contact" target="_blank" rel="noopener noreferrer">
               <i data-lucide="map-pin" width="14" height="14" aria-hidden="true"></i>
-              MIDC, Pune 411026
+              Workshop — Plot No-106/2, T-Block, Shop No-26-B, Rajguru Ind. Co. Op., MIDC, Pune 411026
             </a>
           </li>
         </ul>

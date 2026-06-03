@@ -16,6 +16,14 @@
   align-items: start;
 }
 
+/* ── 2×2 card grid ────────────────────────────────────────── */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
 /* ── Contact channels (left) ──────────────────────────────── */
 .contact-channels {
   display: flex;
@@ -246,6 +254,42 @@
   flex-shrink: 0;
 }
 
+/* ── Multi-address card ───────────────────────────────────── */
+.contact-channel--multi-addr {
+  cursor: default;
+}
+
+.contact-addr-link {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-decoration: none;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-zinc-200);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.contact-addr-link:hover {
+  border-color: var(--color-brand);
+  background-color: var(--color-brand-subtle);
+}
+
+.contact-addr-link__title {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-zinc-400);
+  margin-bottom: var(--space-1);
+}
+
+.contact-addr-link__line {
+  font-size: var(--text-sm);
+  color: var(--color-zinc-600);
+  line-height: var(--leading-normal);
+}
+
 /* ── Map placeholder ──────────────────────────────────────── */
 .contact-map {
   width: 100%;
@@ -292,6 +336,10 @@
   .contact-info-panel {
     position: static;
   }
+
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -300,6 +348,9 @@
     gap: var(--space-4);
   }
 
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ── Contact info detail block (inline-style replacements) ── */
