@@ -1,0 +1,58 @@
+/* ============================================================
+   SUPREME CONTROLS — RESPONSIVE OVERRIDES
+   Mobile-first. Breakpoints:
+     sm:  640px
+     md:  768px
+     lg: 1024px
+     xl: 1280px
+   Grid, section-pad, gutter adjustments only.
+   Component-level responsive rules live in each component's CSS.
+   ============================================================ */
+
+/* ── Tablet (≤ 1024px) ───────────────────────────────────── */
+@media (max-width: 1024px) {
+  :root {
+    --section-pad: var(--section-pad-tablet);
+    --gutter: 2rem;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Mobile large (≤ 768px) ──────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: var(--section-pad-mobile);
+    --gutter: var(--gutter-mobile);
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    margin-bottom: var(--space-12);
+  }
+}
+
+/* ── Mobile small (≤ 480px) ──────────────────────────────── */
+@media (max-width: 480px) {
+  :root {
+    --gutter: 1rem;
+  }
+}
+
+/* ── Desktop XL (≥ 1440px) ──────────────────────────────── */
+@media (min-width: 1440px) {
+  :root {
+    --gutter: 2rem;
+  }
+}

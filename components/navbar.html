@@ -1,0 +1,334 @@
+<header class="navbar" id="navbar" role="banner">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="Supreme Controls — Home">
+        <svg class="navbar__logo-mark" width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+          <rect width="38" height="38" rx="9" fill="#E9631A"/>
+          <path d="M10 20.5c0-3.866 3.134-7 7-7h4a4 4 0 010 8h-4" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M10 26.5h14" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <div class="navbar__logo-text">
+          <span class="navbar__logo-name">Supreme Controls</span>
+          <span class="navbar__logo-tagline">Industrial Automation</span>
+        </div>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <ul class="navbar__list" role="list">
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/pages/about.html" class="navbar__link" data-nav-link>About</a>
+          </li>
+
+          <!-- Services mega dropdown -->
+          <li class="navbar__item navbar__item--mega" data-dropdown>
+            <button class="navbar__link navbar__trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger>
+              Services
+              <svg class="navbar__chevron" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </button>
+
+            <div class="navbar__mega" role="region" aria-label="Services" data-dropdown-panel>
+              <div class="navbar__mega-inner">
+
+                <div class="navbar__mega-heading">
+                  <span class="section-label">Our Services</span>
+                </div>
+
+                <div class="navbar__mega-grid">
+
+                  <a href="/pages/services/industrial-automation.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.22 4.22l1.42 1.42M14.36 14.36l1.42 1.42M4.22 15.78l1.42-1.42M14.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Industrial Automation</span>
+                      <span class="navbar__mega-desc">End-to-end automation for manufacturing plants</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/services/plc-scada-solutions.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="5" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="6" cy="10" r="1.5" fill="currentColor"/>
+                        <path d="M10 8h4M10 12h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">PLC & SCADA Solutions</span>
+                      <span class="navbar__mega-desc">Custom programming and process visibility</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/services/automation-consultancy.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="6" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M4 17c0-3.31 2.69-6 6-6s6 2.69 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14 11l2 2-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Automation Consultancy</span>
+                      <span class="navbar__mega-desc">Expert guidance on automation strategy</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/services/security-solutions.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2L4 5v5c0 3.87 2.69 7.48 6 8 3.31-.52 6-4.13 6-8V5L10 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Security Solutions</span>
+                      <span class="navbar__mega-desc">Surveillance, access control, perimeter protection</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/services/smart-infrastructure.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M3 18V8l7-5 7 5v10" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <rect x="7" y="11" width="6" height="7" rx="0.5" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 7.5c0 0 2-1.5 2-3a2 2 0 00-4 0c0 1.5 2 3 2 3z" stroke="currentColor" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Smart Infrastructure</span>
+                      <span class="navbar__mega-desc">Intelligent building and energy management</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/services/engineering-services.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12.5 4.5l3 3L7 16H4v-3L12.5 4.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        <path d="M10.5 6.5l3 3" stroke="currentColor" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Engineering Services</span>
+                      <span class="navbar__mega-desc">Turnkey project execution and handover</span>
+                    </div>
+                  </a>
+
+                </div>
+
+                <div class="navbar__mega-footer">
+                  <a href="/pages/services.html" class="navbar__mega-all">
+                    View all services
+                    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                      <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <!-- Products mega dropdown -->
+          <li class="navbar__item navbar__item--mega" data-dropdown>
+            <button class="navbar__link navbar__trigger" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger>
+              Products
+              <svg class="navbar__chevron" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </button>
+
+            <div class="navbar__mega navbar__mega--products" role="region" aria-label="Products" data-dropdown-panel>
+              <div class="navbar__mega-inner">
+
+                <div class="navbar__mega-heading">
+                  <span class="section-label">Our Products</span>
+                </div>
+
+                <div class="navbar__mega-grid navbar__mega-grid--products">
+
+                  <a href="/pages/products/pcc-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="3" width="16" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M6 7h8M6 10h5M6 13h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">PCC Panels</span>
+                      <span class="navbar__mega-desc">Power Control Centres</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/products/mcc-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="3" width="16" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 7.5v1.2M10 11.3v1.2M7.5 10h1.2M11.3 10h1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">MCC Panels</span>
+                      <span class="navbar__mega-desc">Motor Control Centres</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/products/apfc-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 3v14M4 10h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.5"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">APFC Panels</span>
+                      <span class="navbar__mega-desc">Automatic Power Factor Correction</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/products/plc-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="3" y="6" width="14" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                        <circle cx="7" cy="10" r="1" fill="currentColor"/>
+                        <circle cx="10" cy="10" r="1" fill="currentColor"/>
+                        <circle cx="13" cy="10" r="1" fill="currentColor"/>
+                        <path d="M6 6V4M10 6V4M14 6V4M6 14v2M10 14v2M14 14v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">PLC Panels</span>
+                      <span class="navbar__mega-desc">Programmable Logic Controller Panels</span>
+                    </div>
+                  </a>
+
+                  <a href="/pages/products/custom-control-panels.html" class="navbar__mega-item">
+                    <div class="navbar__mega-icon" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.93 4.93l1.41 1.41M13.66 13.66l1.41 1.41M4.93 15.07l1.41-1.41M13.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </div>
+                    <div class="navbar__mega-body">
+                      <span class="navbar__mega-title">Custom Control Panels</span>
+                      <span class="navbar__mega-desc">Bespoke engineered panel solutions</span>
+                    </div>
+                  </a>
+
+                </div>
+
+                <div class="navbar__mega-footer">
+                  <a href="/pages/products.html" class="navbar__mega-all">
+                    View all products
+                    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                      <path d="M3 7h8M8 4l3 3-3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/pages/industries.html" class="navbar__link" data-nav-link>Industries</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/pages/projects.html" class="navbar__link" data-nav-link>Projects</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Actions: CTA + Hamburger -->
+      <div class="navbar__actions">
+        <a href="/pages/contact.html" class="btn btn-nav">Contact Us</a>
+        <button
+          class="navbar__hamburger"
+          id="navbar-hamburger"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          aria-controls="navbar-mobile"
+        >
+          <span class="navbar__bar" aria-hidden="true"></span>
+          <span class="navbar__bar" aria-hidden="true"></span>
+          <span class="navbar__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="navbar__mobile" id="navbar-mobile" aria-hidden="true">
+    <div class="navbar__mobile-inner">
+      <nav aria-label="Mobile navigation">
+        <ul class="navbar__mobile-list" role="list">
+
+          <li><a href="/" class="navbar__mobile-link" data-nav-link>Home</a></li>
+          <li><a href="/pages/about.html" class="navbar__mobile-link" data-nav-link>About</a></li>
+
+          <!-- Services accordion -->
+          <li class="navbar__mobile-item--has-sub">
+            <button class="navbar__mobile-link navbar__mobile-trigger" aria-expanded="false">
+              Services
+              <svg class="navbar__chevron" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </button>
+            <ul class="navbar__mobile-sub" hidden>
+              <li><a href="/pages/services/industrial-automation.html" class="navbar__mobile-sub-link">Industrial Automation</a></li>
+              <li><a href="/pages/services/plc-scada-solutions.html" class="navbar__mobile-sub-link">PLC & SCADA Solutions</a></li>
+              <li><a href="/pages/services/automation-consultancy.html" class="navbar__mobile-sub-link">Automation Consultancy</a></li>
+              <li><a href="/pages/services/security-solutions.html" class="navbar__mobile-sub-link">Security Solutions</a></li>
+              <li><a href="/pages/services/smart-infrastructure.html" class="navbar__mobile-sub-link">Smart Infrastructure</a></li>
+              <li><a href="/pages/services/engineering-services.html" class="navbar__mobile-sub-link">Engineering Services</a></li>
+              <li><a href="/pages/services.html" class="navbar__mobile-sub-link navbar__mobile-sub-link--view-all">All Services →</a></li>
+            </ul>
+          </li>
+
+          <!-- Products accordion -->
+          <li class="navbar__mobile-item--has-sub">
+            <button class="navbar__mobile-link navbar__mobile-trigger" aria-expanded="false">
+              Products
+              <svg class="navbar__chevron" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </button>
+            <ul class="navbar__mobile-sub" hidden>
+              <li><a href="/pages/products/pcc-panels.html" class="navbar__mobile-sub-link">PCC Panels</a></li>
+              <li><a href="/pages/products/mcc-panels.html" class="navbar__mobile-sub-link">MCC Panels</a></li>
+              <li><a href="/pages/products/apfc-panels.html" class="navbar__mobile-sub-link">APFC Panels</a></li>
+              <li><a href="/pages/products/plc-panels.html" class="navbar__mobile-sub-link">PLC Panels</a></li>
+              <li><a href="/pages/products/custom-control-panels.html" class="navbar__mobile-sub-link">Custom Control Panels</a></li>
+              <li><a href="/pages/products.html" class="navbar__mobile-sub-link navbar__mobile-sub-link--view-all">All Products →</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/pages/industries.html" class="navbar__mobile-link" data-nav-link>Industries</a></li>
+          <li><a href="/pages/projects.html" class="navbar__mobile-link" data-nav-link>Projects</a></li>
+
+          <li class="navbar__mobile-cta-item">
+            <a href="/pages/contact.html" class="btn btn-primary w-full">Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+</header>

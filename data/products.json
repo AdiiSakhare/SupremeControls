@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pcc-panels",
+    "title": "PCC Panels",
+    "fullTitle": "Power Control Centre Panels",
+    "shortDesc": "Main distribution panels engineered for reliable power control in large industrial and commercial facilities.",
+    "href": "pages/products/pcc-panels.html",
+    "icon": "zap"
+  },
+  {
+    "id": "mcc-panels",
+    "title": "MCC Panels",
+    "fullTitle": "Motor Control Centre Panels",
+    "shortDesc": "Centralised motor control solutions with intelligent protection, monitoring, and switching capabilities.",
+    "href": "pages/products/mcc-panels.html",
+    "icon": "settings"
+  },
+  {
+    "id": "apfc-panels",
+    "title": "APFC Panels",
+    "fullTitle": "Automatic Power Factor Correction Panels",
+    "shortDesc": "Automated capacitor bank systems that maintain optimal power factor and reduce energy losses.",
+    "href": "pages/products/apfc-panels.html",
+    "icon": "gauge"
+  },
+  {
+    "id": "plc-panels",
+    "title": "PLC Panels",
+    "fullTitle": "PLC Control Panels",
+    "shortDesc": "Custom-engineered PLC panels built for precise process control, data acquisition, and system integration.",
+    "href": "pages/products/plc-panels.html",
+    "icon": "circuit-board"
+  },
+  {
+    "id": "vfd-panels",
+    "title": "VFD Panels",
+    "fullTitle": "Variable Frequency Drive Panels",
+    "shortDesc": "Drive panels for variable speed motor control delivering energy savings, soft start, and precise process control.",
+    "href": "pages/products/vfd-panels.html",
+    "icon": "activity"
+  },
+  {
+    "id": "servo-panels",
+    "title": "Servo Panels",
+    "fullTitle": "Servo Drive Panels",
+    "shortDesc": "High-precision servo drive enclosures for position, velocity, and torque control in motion applications.",
+    "href": "pages/products/servo-panels.html",
+    "icon": "crosshair"
+  }
+]

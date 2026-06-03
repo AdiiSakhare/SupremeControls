@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Supreme Controls — Industrial automation and engineering company based in Pune, India. 15+ years delivering PLC, SCADA, building automation, agriculture automation, and electrical control panel solutions.">
+  <title>About Us | Supreme Controls</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/utilities.css">
+  <link rel="stylesheet" href="../css/typography.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/hero.css">
+  <link rel="stylesheet" href="../css/sections.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <!-- CDN: GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- CDN: Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+
+<body data-transparent-nav="true">
+
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         1. HERO
+    ═══════════════════════════════════════════════════════ -->
+    <section class="hero hero--page" aria-label="About Supreme Controls">
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1920&q=80"
+          alt="Supreme Controls engineering team at work"
+          class="hero__image"
+          loading="eager"
+          fetchpriority="high"
+          onerror="this.style.display='none'"
+        >
+        <div class="hero__overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__label">
+          <span class="hero__label-dot" aria-hidden="true"></span>
+          Pune, Maharashtra, India
+        </div>
+
+        <h1 class="hero__heading display-lg display-lg--white">
+          <span class="hero-line-wrap"><span class="hero-line">Built on</span></span>
+          <span class="hero-line-wrap"><span class="hero-line">engineering.</span></span>
+        </h1>
+
+        <p class="hero__sub body-lg body-lg--white hero-sub">
+          10+ years delivering automation systems, control panels,<br class="hero__br">
+          and engineering solutions that industrial operations depend on.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         3. COMPANY STORY
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section about-story" aria-label="Company story">
+      <div class="container">
+        <div class="about-story__inner">
+
+          <div class="about-story__left" data-reveal="fade-right">
+            <span class="section-label">Our Story</span>
+            <h2 class="h2">From a single workshop to full-scale industrial engineering.</h2>
+          </div>
+
+          <div class="about-story__right" data-reveal="fade-left">
+            <p class="body-lg">
+              Supreme Controls was founded in Pune with a focused purpose — to bring engineering precision to industrial automation. What began as a specialist control panel fabrication workshop has grown into a multi-discipline engineering firm serving manufacturing plants, infrastructure projects, and process industries across India.
+            </p>
+            <p class="body-base" style="margin-top: var(--space-6);">
+              Over 15 years, we built deep capability across six engineering disciplines — industrial automation, PLC &amp; SCADA systems, building automation, agriculture automation, security solutions, and automation consultancy — accumulating experience across demanding industrial environments where systems must perform reliably, continuously, and safely.
+            </p>
+            <p class="body-base" style="margin-top: var(--space-6);">
+              Today, our team of engineers and technicians manages projects from initial scoping through commissioning and post-handover support. Our works facility at MIDC Pune fabricates control panels to IEC and IS standards in-house — giving us direct quality control at every stage.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Stats strip -->
+        <div class="about-stats-strip" data-stagger>
+          <div class="about-stat">
+            <span class="about-stat__number" data-count="10" data-count-suffix="+">10+</span>
+            <span class="about-stat__label">Years of Experience</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat__number" data-count="200" data-count-suffix="+">200+</span>
+            <span class="about-stat__label">Projects Delivered</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat__number" data-count="12" data-count-suffix="+">12+</span>
+            <span class="about-stat__label">Industries Served</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat__number" data-count="500" data-count-suffix="+">500+</span>
+            <span class="about-stat__label">Solutions Engineered</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         4. MISSION & VISION
+    ═══════════════════════════════════════════════════════ -->
+    <section class="mv-section" aria-label="Mission and vision">
+      <div class="mv-stack">
+
+        <div class="mv-row" data-reveal="fade-up">
+          <div class="container">
+            <div class="mv-row__inner">
+              <div class="mv-row__label">
+                <span class="section-label">Our Mission</span>
+              </div>
+              <div class="mv-row__content">
+                <p class="mv-row__text">
+                  <span class="mv-text-primary">To deliver industrial automation and electrical engineering solutions with technical precision, reliable execution, and long-term accountability</span><span class="mv-text-secondary"> — enabling our clients to operate their plants and facilities with greater efficiency, safety, and confidence.</span>
+                </p>
+                <div class="mv-row__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=80"
+                    alt="Supreme Controls engineer working on industrial automation system"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mv-row" data-reveal="fade-up" data-delay="0.15">
+          <div class="container">
+            <div class="mv-row__inner">
+              <div class="mv-row__label">
+                <span class="section-label">Our Vision</span>
+              </div>
+              <div class="mv-row__content">
+                <p class="mv-row__text">
+                  <span class="mv-text-primary">To become the most trusted automation and control systems engineering partner for industrial clients across India</span><span class="mv-text-secondary"> — recognised for engineering quality, technical breadth, and a track record of projects delivered without compromise.</span>
+                </p>
+                <div class="mv-row__image">
+                  <img
+                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80"
+                    alt="Supreme Controls industrial automation and control systems vision"
+                    loading="lazy"
+                    onerror="this.style.display='none'"
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         5. WHAT WE DO — SERVICES SUMMARY
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Our services">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal="fade-up">
+          <span class="section-label">What We Do</span>
+          <h2 class="h2" style="margin-top: var(--space-4);">Six engineering disciplines. One accountable team.</h2>
+          <p class="body-lg" style="margin-top: var(--space-4);">
+            Every service backed by in-house engineering, fabrication, and commissioning capability.
+          </p>
+        </div>
+
+        <div class="capabilities__grid" style="margin-top: var(--space-16);" data-stagger>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="settings-2" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">Industrial Automation</h3>
+            <p class="cap-card__desc">End-to-end automation system design and integration for manufacturing lines, process plants, and industrial operations.</p>
+            <a href="/pages/services/industrial-automation.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="cpu" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">PLC &amp; SCADA Solutions</h3>
+            <p class="cap-card__desc">Custom PLC programming, SCADA system design, and HMI development across all major automation platforms.</p>
+            <a href="/pages/services/plc-scada-solutions.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="building-2" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">Building Automation</h3>
+            <p class="cap-card__desc">Integrated BMS, HVAC control, lighting management, and energy monitoring for commercial buildings and industrial facilities.</p>
+            <a href="/pages/services/smart-infrastructure.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="sprout" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">Agriculture Automation</h3>
+            <p class="cap-card__desc">Precision irrigation control, pump automation, greenhouse climate management, and SCADA-based crop monitoring.</p>
+            <a href="/pages/services/engineering-services.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="shield-check" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">Security Solutions</h3>
+            <p class="cap-card__desc">Surveillance, access control, intrusion detection, and perimeter protection systems for industrial and commercial sites.</p>
+            <a href="/pages/services/security-solutions.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="cap-card">
+            <div class="cap-card__icon" aria-hidden="true">
+              <i data-lucide="lightbulb" width="22" height="22"></i>
+            </div>
+            <h3 class="cap-card__title">Automation Consultancy</h3>
+            <p class="cap-card__desc">Technology selection, system architecture, feasibility assessment, and roadmap planning for your automation investment.</p>
+            <a href="/pages/services/automation-consultancy.html" class="cap-card__link">
+              Learn more <i data-lucide="arrow-right" width="14" height="14" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         6. CORE STRENGTHS
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section section--surface" aria-label="Core strengths">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal="fade-up">
+          <span class="section-label">Our Strengths</span>
+          <h2 class="h2" style="margin-top: var(--space-4);">Engineering principles we don't compromise on.</h2>
+        </div>
+
+        <div class="strengths-grid" style="margin-top: var(--space-16);" data-stagger>
+
+          <div class="strength-item">
+            <span class="strength-item__number">01</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">Multi-Platform Technical Depth</h3>
+              <p class="strength-item__desc">
+                Hands-on experience across Siemens, Allen-Bradley, Schneider Electric, ABB, and Mitsubishi platforms. We select the right technology for each application — not the one most convenient to us.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength-item">
+            <span class="strength-item__number">02</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">Custom-Engineered, Not Templated</h3>
+              <p class="strength-item__desc">
+                Every control panel, PLC programme, and system design starts from your specific process requirements and site conditions. No generic designs — each solution engineered to your brief.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength-item">
+            <span class="strength-item__number">03</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">In-House Fabrication</h3>
+              <p class="strength-item__desc">
+                Our MIDC Pune works facility fabricates all control panels in-house — PCC, MCC, APFC, PLC, VFD, and Servo panels — giving direct quality control at every stage of production.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength-item">
+            <span class="strength-item__number">04</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">Standards-Grade Build Quality</h3>
+              <p class="strength-item__desc">
+                All panels designed, fabricated, and tested to IEC 61439 and IS 13947 standards. Complete documentation — single-line diagrams, GA drawings, wiring schedules, FAT records, and O&amp;M manuals — included with every delivery.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength-item">
+            <span class="strength-item__number">05</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">End-to-End Service Capability</h3>
+              <p class="strength-item__desc">
+                From consultancy and system design through installation, commissioning, operator training, and post-handover support — one team, one contract, full accountability across the project lifecycle.
+              </p>
+            </div>
+          </div>
+
+          <div class="strength-item">
+            <span class="strength-item__number">06</span>
+            <div class="strength-item__body">
+              <h3 class="strength-item__title">Cross-Sector Domain Experience</h3>
+              <p class="strength-item__desc">
+                15+ years across manufacturing, process industries, infrastructure, automotive, agriculture, and commercial sectors. Operational understanding that guides better system design decisions — not just technical competence.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         7. INDUSTRIES
+    ═══════════════════════════════════════════════════════ -->
+    <section class="section" aria-label="Industries we serve">
+      <div class="container">
+
+        <div class="section-header section-header--center" data-reveal="fade-up">
+          <span class="section-label">Industries</span>
+          <h2 class="h2" style="margin-top: var(--space-4);">Operational experience across key sectors.</h2>
+          <p class="body-lg" style="margin-top: var(--space-4);">
+            Cross-sector exposure that informs better system design decisions.
+          </p>
+        </div>
+
+        <div class="industry-grid" data-stagger style="margin-top: var(--space-16);">
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="factory" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Manufacturing</h3>
+            <p class="industry-card__desc">Automotive, FMCG, packaging, discrete and batch production</p>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="flask-conical" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Process Industries</h3>
+            <p class="industry-card__desc">Chemical, pharma, food processing, water treatment</p>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="zap" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Infrastructure</h3>
+            <p class="industry-card__desc">Power distribution, water utilities, transport, civil infrastructure</p>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="car" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Automotive</h3>
+            <p class="industry-card__desc">Assembly lines, body shop automation, paint shop systems</p>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="sprout" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Agriculture &amp; Agro-processing</h3>
+            <p class="industry-card__desc">Irrigation automation, pump control, greenhouse systems, cold storage</p>
+          </div>
+
+          <div class="industry-card">
+            <div class="industry-card__icon" aria-hidden="true">
+              <i data-lucide="building-2" width="22" height="22"></i>
+            </div>
+            <h3 class="industry-card__name">Commercial Facilities</h3>
+            <p class="industry-card__desc">Building automation, BMS, energy management, security systems</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         8. CONTACT / LOCATION
+    ═══════════════════════════════════════════════════════ -->
+    <section class="contact-strip" aria-label="Contact information">
+      <div class="container">
+        <div class="contact-strip__grid">
+
+          <div class="contact-item">
+            <div class="contact-item__icon" aria-hidden="true">
+              <i data-lucide="phone" width="20" height="20"></i>
+            </div>
+            <span class="contact-item__label">Call Us</span>
+            <div class="contact-item__values">
+              <a href="tel:+919850766125" class="contact-item__value-link">
+                V. V. Jadhav
+                <span class="contact-item__value-sub">+91 98507 66125</span>
+              </a>
+              <a href="tel:+919850781392" class="contact-item__value-link">
+                A. V. Jadhav
+                <span class="contact-item__value-sub">+91 98507 81392</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon" aria-hidden="true">
+              <i data-lucide="mail" width="20" height="20"></i>
+            </div>
+            <span class="contact-item__label">Email Us</span>
+            <div class="contact-item__values">
+              <a href="mailto:vvj.supreme@gmail.com" class="contact-item__value-link">vvj.supreme@gmail.com</a>
+              <a href="mailto:supremeenterprises1970@gmail.com" class="contact-item__value-link">supremeenterprises1970@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item" style="cursor:default;">
+            <div class="contact-item__icon" aria-hidden="true">
+              <i data-lucide="map-pin" width="20" height="20"></i>
+            </div>
+            <span class="contact-item__label">Our Locations</span>
+            <div class="contact-item__values">
+              <a href="https://maps.google.com/?q=Sr.No.229/2+Gajanan+Housing+Society+Khandoba+Mal+Bhosari+Pune" class="contact-item__value-link" target="_blank" rel="noopener noreferrer">
+                Office — Bhosari, Pune 411039
+                <span class="contact-item__value-sub">Sr. No. 229/2, Gajanan Hsg. Soc., Khandoba Mal</span>
+              </a>
+              <a href="https://maps.google.com/?q=Rajguru+Industrial+Co-operative+Society+MIDC+Pune+411026" class="contact-item__value-link" target="_blank" rel="noopener noreferrer">
+                Works — MIDC, Pune 411026
+                <span class="contact-item__value-sub">Plot No. 106/2, T-Block, Shop No. 26-B, Rajguru Ind. Co-op.</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS -->
+  <script src="../js/component-loader.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
+
+</body>
+</html>

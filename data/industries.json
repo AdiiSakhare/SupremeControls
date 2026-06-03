@@ -1,0 +1,44 @@
+[
+  {
+    "id": "manufacturing",
+    "title": "Manufacturing",
+    "shortDesc": "Automation solutions for discrete and process manufacturing — from conveyor systems to full plant control.",
+    "href": "pages/industries/manufacturing.html",
+    "icon": "assets/icons/capabilities/manufacturing.svg"
+  },
+  {
+    "id": "automotive",
+    "title": "Automotive",
+    "shortDesc": "High-precision automation for automotive assembly, painting, and quality control operations.",
+    "href": "pages/industries/automotive.html",
+    "icon": "assets/icons/capabilities/automotive.svg"
+  },
+  {
+    "id": "process-industries",
+    "title": "Process Industries",
+    "shortDesc": "Control systems for chemical, pharmaceutical, and food & beverage processing plants.",
+    "href": "pages/industries/process-industries.html",
+    "icon": "assets/icons/capabilities/process.svg"
+  },
+  {
+    "id": "infrastructure",
+    "title": "Infrastructure",
+    "shortDesc": "Electrical and automation systems for utilities, water treatment, and large-scale infrastructure projects.",
+    "href": "pages/industries/infrastructure.html",
+    "icon": "assets/icons/capabilities/infrastructure.svg"
+  },
+  {
+    "id": "agriculture",
+    "title": "Agriculture",
+    "shortDesc": "Irrigation control, pump automation, and smart monitoring systems for agricultural operations.",
+    "href": "pages/industries/agriculture.html",
+    "icon": "assets/icons/capabilities/agriculture.svg"
+  },
+  {
+    "id": "commercial",
+    "title": "Commercial Facilities",
+    "shortDesc": "Building automation, energy management, and security integration for commercial complexes.",
+    "href": "pages/industries/commercial-facilities.html",
+    "icon": "assets/icons/capabilities/commercial.svg"
+  }
+]

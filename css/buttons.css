@@ -1,0 +1,198 @@
+/* ============================================================
+   SUPREME CONTROLS — BUTTONS
+   Three variants: primary (orange filled), secondary (outline), ghost.
+   One size standard + small modifier.
+   ============================================================ */
+
+/* ── Base button ─────────────────────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition:
+    background-color var(--transition-base),
+    border-color var(--transition-base),
+    color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-fast);
+  text-decoration: none;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Hero / large size ───────────────────────────────────── */
+.btn-lg {
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: var(--text-base);
+}
+
+.btn:active {
+  transform: scale(0.96);
+}
+
+/* ── Primary — orange filled ─────────────────────────────── */
+.btn-primary {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
+  box-shadow: 0 4px 20px rgba(233, 99, 26, 0.35);
+}
+
+.btn-primary:focus-visible {
+  outline-color: var(--color-brand);
+  box-shadow: 0 0 0 4px rgba(233, 99, 26, 0.2);
+}
+
+/* Shimmer sweep on hover — light passes across the button */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 65%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 100%
+  );
+  transform: skewX(-15deg);
+  pointer-events: none;
+  transition: left 0ms; /* instant reset on hover-out */
+}
+
+.btn-primary:hover::after {
+  left: 150%;
+  transition: left 650ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ── Secondary — outlined with blob fill animation ───────── */
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--color-zinc-300);
+  color: var(--color-zinc-900);
+  overflow: hidden;
+}
+
+/* Content wrapper injected by btn-effect.js — sits above the blob */
+.btn-secondary__content {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  pointer-events: none;
+}
+
+/* Blob element injected by btn-effect.js */
+.btn-secondary .btn-blob {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--color-zinc-900);
+  pointer-events: none;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%) scale(0);
+  will-change: transform;
+}
+
+/* Text turns white once blob covers the button */
+.btn-secondary.btn--blob-active {
+  color: var(--color-white);
+  border-color: var(--color-zinc-900);
+}
+
+/* Fallback hover for browsers/no-JS */
+@media (hover: hover) and (pointer: fine) {
+  .btn-secondary:not(.btn--blob-js):hover {
+    border-color: var(--color-zinc-900);
+    background-color: var(--color-zinc-900);
+    color: var(--color-white);
+  }
+}
+
+/* ── Ghost — text only ───────────────────────────────────── */
+.btn-ghost {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-zinc-900);
+  padding-inline: var(--space-4);
+}
+
+.btn-ghost:hover {
+  color: var(--color-brand);
+  background-color: var(--color-brand-subtle);
+}
+
+/* ── White variant (for dark/hero backgrounds) ───────────── */
+.btn-white {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-zinc-900);
+}
+
+.btn-white:hover {
+  background-color: var(--color-zinc-100);
+  border-color: var(--color-zinc-100);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* White outline (for dark backgrounds) */
+.btn-white-outline {
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.5);
+  color: var(--color-white);
+}
+
+.btn-white-outline:hover {
+  background-color: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.8);
+}
+
+/* ── Small modifier ──────────────────────────────────────── */
+.btn--sm {
+  padding: 6px 16px;
+  font-size: var(--text-sm);
+}
+
+/* ── Icon inside button ──────────────────────────────────── */
+.btn-icon {
+  width: var(--btn-height);
+  height: var(--btn-height);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.btn-icon--sm {
+  width: var(--btn-height-sm);
+  height: var(--btn-height-sm);
+}
+
+/* Arrow icon animates on hover */
+.btn .btn-arrow {
+  transition: transform var(--transition-base);
+  display: inline-flex;
+}
+
+.btn:hover .btn-arrow {
+  transform: translateX(4px);
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "quote": "Supreme Controls delivered the complete PLC and SCADA integration for our new assembly line ahead of schedule. Their engineering team understood our process requirements precisely — zero rework after commissioning.",
+    "author": "Rajesh Nair",
+    "title": "Plant Head",
+    "company": "Precision Auto Components, Pune"
+  },
+  {
+    "id": 2,
+    "quote": "We engaged Supreme Controls for our MCC and APFC panel supply. The build quality exceeded our expectations and their on-site commissioning team resolved every issue on the first visit.",
+    "author": "Sunil Patil",
+    "title": "Electrical Manager",
+    "company": "Avanta Pharma Ltd., Nashik"
+  },
+  {
+    "id": 3,
+    "quote": "From design review to final handover, the Supreme Controls team maintained complete transparency. Their SCADA dashboards gave our operations team visibility we had never had before.",
+    "author": "Priya Mehta",
+    "title": "Operations Director",
+    "company": "GreenField Agro Processing, Aurangabad"
+  }
+]

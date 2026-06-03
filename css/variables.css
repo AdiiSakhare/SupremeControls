@@ -1,0 +1,146 @@
+/* ============================================================
+   SUPREME CONTROLS — DESIGN TOKENS
+   Single source of truth for all design values.
+   Never hardcode values outside this file.
+   ============================================================ */
+
+:root {
+
+  /* ── Brand ─────────────────────────────────────────────── */
+  --color-brand:        #12BFDE;  /* TEAL brand*/
+  --color-brand-dark:   #10ABC6;  /* TEAL brand*/
+  --color-brand-light:  #71E0F4;  /* TEAL brand*/
+  --color-brand-subtle: #EFFDFF;  /* TEAL brand*/
+
+  /* ── Neutrals (Zinc scale) ──────────────────────────────── */
+  --color-white:      #FFFFFF;
+  --color-zinc-50:    #FAFAFA;
+  --color-zinc-100:   #F4F4F5;
+  --color-zinc-200:   #E4E4E7;
+  --color-zinc-300:   #D4D4D8;
+  --color-zinc-400:   #A1A1AA;
+  --color-zinc-500:   #71717A;
+  --color-zinc-600:   #52525B;
+  --color-zinc-700:   #3F3F46;
+  --color-zinc-800:   #27272A;
+  --color-zinc-900:   #18181B;
+  --color-black:      #09090B;
+
+  /* ── Semantic ───────────────────────────────────────────── */
+  --color-bg:         var(--color-white);
+  --color-surface:    var(--color-zinc-50);
+  --color-border:     var(--color-zinc-200);
+  --color-text:       var(--color-zinc-900);
+  --color-text-muted: var(--color-zinc-500);
+  --color-text-light: var(--color-zinc-400);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-display: 'Wix Madefor Display', system-ui, sans-serif;
+  --font-body:    'Wix Madefor Text', system-ui, sans-serif;
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+  --font-weight-bold:     700;
+  --font-weight-extrabold:800;
+
+  /* Type scale — fluid from mobile → desktop */
+  --text-xs:   0.75rem;    /*  12px */
+  --text-sm:   0.875rem;   /*  14px */
+  --text-base: 1rem;       /*  16px */
+  --text-lg:   1.125rem;   /*  18px */
+  --text-xl:   1.25rem;    /*  20px */
+  --text-2xl:  1.5rem;     /*  24px */
+  --text-3xl:  1.875rem;   /*  30px */
+  --text-4xl:  2.25rem;    /*  36px */
+  --text-5xl:  3rem;       /*  48px */
+  --text-6xl:  3.75rem;    /*  60px */
+  --text-7xl:  4.5rem;     /*  72px */
+  --text-8xl:  6rem;       /*  96px */
+
+  --leading-tight:   1.2;
+  --leading-snug:    1.35;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.7;
+  --leading-loose:   1.8;
+
+  --tracking-tight:  -0.03em;
+  --tracking-snug:   -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide:   0.05em;
+  --tracking-wider:  0.1em;
+
+  /* ── Spacing ────────────────────────────────────────────── */
+  --space-1:  0.25rem;   /*   4px */
+  --space-2:  0.5rem;    /*   8px */
+  --space-3:  0.75rem;   /*  12px */
+  --space-4:  1rem;      /*  16px */
+  --space-5:  1.25rem;   /*  20px */
+  --space-6:  1.5rem;    /*  24px */
+  --space-8:  2rem;      /*  32px */
+  --space-10: 2.5rem;    /*  40px */
+  --space-12: 3rem;      /*  48px */
+  --space-16: 4rem;      /*  64px */
+  --space-20: 5rem;      /*  80px */
+  --space-24: 6rem;      /*  96px */
+  --space-32: 8rem;      /* 128px */
+
+  /* Section vertical padding */
+  --section-pad-desktop: 7.5rem;   /* 120px */
+  --section-pad-tablet:  5rem;     /*  80px */
+  --section-pad-mobile:  4rem;     /*  64px */
+  --section-pad: var(--section-pad-desktop);
+
+  /* ── Layout ─────────────────────────────────────────────── */
+  --container-max:   1280px;
+  --container-outer: 1440px;
+  --gutter:          1.5rem;   /* 24px sides on desktop */
+  --gutter-mobile:   1.25rem;  /* 20px sides on mobile */
+
+  /* ── Border radius ──────────────────────────────────────── */
+  --radius-xs:   0.25rem;  /*  4px */
+  --radius-sm:   0.5rem;   /*  8px */
+  --radius-md:   1rem;     /* 16px */
+  --radius-lg:   1.5rem;   /* 24px */
+  --radius-xl:   2rem;     /* 32px */
+  --radius-full: 9999px;
+
+  /* ── Shadows (very subtle per design system) ─────────────── */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 2px 6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-card: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 8px 32px rgba(0,0,0,0.10);
+
+  /* ── Transitions ────────────────────────────────────────── */
+  --ease-out:         cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:      cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring:      cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out-expo:    cubic-bezier(0.23, 1, 0.32, 1);    /* Strong — UI entries */
+  --ease-in-out-expo: cubic-bezier(0.77, 0, 0.175, 1);   /* Strong — on-screen motion */
+
+  --duration-fast:   150ms;
+  --duration-base:   300ms;
+  --duration-slow:   500ms;
+  --duration-slower: 800ms;
+
+  --transition-fast:   var(--duration-fast) var(--ease-out);
+  --transition-base:   var(--duration-base) var(--ease-out);
+  --transition-slow:   var(--duration-slow) var(--ease-out);
+
+  /* ── Components ─────────────────────────────────────────── */
+  --navbar-height:        72px;
+  --navbar-height-mobile: 64px;
+  --btn-height:           56px;
+  --btn-height-sm:        44px;
+  --btn-radius:           var(--radius-sm);
+
+  /* ── Z-index scale ──────────────────────────────────────── */
+  --z-base:     0;
+  --z-raised:   10;
+  --z-dropdown: 200;
+  --z-sticky:   300;
+  --z-overlay:  400;
+  --z-modal:    500;
+}

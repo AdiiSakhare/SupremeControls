@@ -1,0 +1,44 @@
+[
+  {
+    "id": "industrial-automation",
+    "title": "Industrial Automation",
+    "shortDesc": "Complete automation system design and integration for manufacturing lines, process plants, and industrial operations from concept to commissioning.",
+    "href": "pages/services/industrial-automation.html",
+    "icon": "settings-2"
+  },
+  {
+    "id": "plc-scada",
+    "title": "PLC & SCADA Solutions",
+    "shortDesc": "Custom PLC programming, SCADA system design, and HMI development across all major platforms for complete process visibility and control.",
+    "href": "pages/services/plc-scada-solutions.html",
+    "icon": "cpu"
+  },
+  {
+    "id": "building-automation",
+    "title": "Building Automation",
+    "shortDesc": "Integrated BMS, HVAC control, lighting management, and energy monitoring systems for commercial buildings and industrial facilities.",
+    "href": "pages/services/smart-infrastructure.html",
+    "icon": "building-2"
+  },
+  {
+    "id": "agriculture-automation",
+    "title": "Agriculture Automation",
+    "shortDesc": "Precision irrigation control, pump automation, greenhouse climate management, and SCADA-based crop monitoring for modern farming operations.",
+    "href": "pages/services/engineering-services.html",
+    "icon": "sprout"
+  },
+  {
+    "id": "security-solutions",
+    "title": "Security Solutions",
+    "shortDesc": "Integrated surveillance, access control, intrusion detection, and perimeter protection systems for industrial and commercial sites.",
+    "href": "pages/services/security-solutions.html",
+    "icon": "shield-check"
+  },
+  {
+    "id": "automation-consultancy",
+    "title": "Automation Consultancy",
+    "shortDesc": "Technology selection, system architecture, feasibility assessment, and roadmap planning to guide your automation investment with technical clarity.",
+    "href": "pages/services/automation-consultancy.html",
+    "icon": "lightbulb"
+  }
+]

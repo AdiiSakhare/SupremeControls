@@ -1,0 +1,302 @@
+/* ============================================================
+   SUPREME CONTROLS — CONTACT PAGE
+   Contact channel cards, address block, map area.
+   ============================================================ */
+
+/* ── Contact hero ────────────────────────────────────────── */
+.hero--contact {
+  min-height: 90vh;
+}
+
+/* ── Main contact layout ──────────────────────────────────── */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+/* ── Contact channels (left) ──────────────────────────────── */
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact-channel {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-zinc-200);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition:
+    border-color var(--transition-base),
+    box-shadow   var(--transition-base),
+    transform    var(--transition-base);
+}
+
+.contact-channel:hover {
+  border-color: var(--color-brand);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+}
+
+.contact-channel--static {
+  cursor: default;
+}
+
+.contact-channel--static:hover {
+  transform: none;
+  border-color: var(--color-zinc-200);
+  box-shadow: none;
+}
+
+.contact-channel__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-zinc-100);
+  border-radius: var(--radius-md);
+  color: var(--color-zinc-600);
+  flex-shrink: 0;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.contact-channel:hover:not(.contact-channel--static) .contact-channel__icon {
+  background-color: var(--color-brand-subtle);
+  color: var(--color-brand);
+}
+
+.contact-channel__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+.contact-channel__label {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--color-zinc-400);
+}
+
+.contact-channel__value {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-zinc-900);
+  line-height: var(--leading-snug);
+}
+
+.contact-channel__sub {
+  font-size: var(--text-sm);
+  color: var(--color-zinc-500);
+  line-height: var(--leading-normal);
+  margin-top: 2px;
+}
+
+.contact-channel__action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand);
+  margin-top: var(--space-2);
+  transition: gap var(--transition-base);
+}
+
+.contact-channel:hover .contact-channel__action {
+  gap: var(--space-2);
+}
+
+/* ── Info panel (right) ───────────────────────────────────── */
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: sticky;
+  top: 96px;
+}
+
+.contact-info-card {
+  padding: var(--space-8);
+  background-color: var(--color-zinc-50);
+  border: 1px solid var(--color-zinc-200);
+  border-radius: var(--radius-xl);
+}
+
+.contact-info-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-zinc-900);
+  margin-bottom: var(--space-5);
+}
+
+/* ── Address block ────────────────────────────────────────── */
+.contact-address {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.contact-address__line {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-zinc-600);
+  line-height: var(--leading-normal);
+}
+
+.contact-address__line svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--color-zinc-400);
+}
+
+/* ── Business hours ───────────────────────────────────────── */
+.contact-hours__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-hours__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-sm);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-zinc-200);
+}
+
+.contact-hours__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-hours__day {
+  color: var(--color-zinc-500);
+}
+
+.contact-hours__time {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-zinc-900);
+}
+
+.contact-hours__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-zinc-500);
+}
+
+.contact-hours__status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-zinc-300);
+}
+
+.contact-hours__status--open .contact-hours__status-dot {
+  background-color: #22c55e;
+}
+
+/* ── Social links ─────────────────────────────────────────── */
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-social__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-zinc-200);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-zinc-700);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.contact-social__link:hover {
+  border-color: var(--color-zinc-400);
+  color: var(--color-zinc-900);
+}
+
+.contact-social__link svg {
+  color: var(--color-zinc-400);
+  flex-shrink: 0;
+}
+
+/* ── Map placeholder ──────────────────────────────────────── */
+.contact-map {
+  width: 100%;
+  aspect-ratio: 16/7;
+  background-color: var(--color-zinc-100);
+  border: 1px solid var(--color-zinc-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-map__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--color-zinc-400);
+  text-align: center;
+}
+
+.contact-map__placeholder-label {
+  font-size: var(--text-sm);
+  color: var(--color-zinc-400);
+}
+
+.contact-map iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .contact-info-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-channel {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+}
