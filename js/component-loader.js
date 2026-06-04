@@ -228,16 +228,6 @@ const NAVBAR_HTML = `<header class="navbar" id="navbar" role="banner">
                     </div>
                   </a>
 
-                  <a href="/pages/products/custom-control-panels.html" class="navbar__mega-item">
-                    <div class="navbar__mega-icon" aria-hidden="true">
-                      <i data-lucide="sliders-horizontal" width="20" height="20"></i>
-                    </div>
-                    <div class="navbar__mega-body">
-                      <span class="navbar__mega-title">Custom Control Panels</span>
-                      <span class="navbar__mega-desc">Bespoke panels engineered to specification</span>
-                    </div>
-                  </a>
-
                 </div>
 
                 <div class="navbar__mega-footer">
@@ -253,10 +243,6 @@ const NAVBAR_HTML = `<header class="navbar" id="navbar" role="banner">
 
           <li class="navbar__item">
             <a href="/pages/industries.html" class="navbar__link" data-nav-link>Industries</a>
-          </li>
-
-          <li class="navbar__item">
-            <a href="/pages/projects.html" class="navbar__link" data-nav-link>Projects</a>
           </li>
 
         </ul>
@@ -320,13 +306,11 @@ const NAVBAR_HTML = `<header class="navbar" id="navbar" role="banner">
               <li><a href="/pages/products/plc-panels.html" class="navbar__mobile-sub-link">PLC Panels</a></li>
               <li><a href="/pages/products/vfd-panels.html" class="navbar__mobile-sub-link">VFD Panels</a></li>
               <li><a href="/pages/products/servo-panels.html" class="navbar__mobile-sub-link">Servo Panels</a></li>
-              <li><a href="/pages/products/custom-control-panels.html" class="navbar__mobile-sub-link">Custom Control Panels</a></li>
               <li><a href="/pages/products.html" class="navbar__mobile-sub-link navbar__mobile-sub-link--view-all">All Products →</a></li>
             </ul>
           </li>
 
           <li><a href="/pages/industries.html" class="navbar__mobile-link" data-nav-link>Industries</a></li>
-          <li><a href="/pages/projects.html" class="navbar__mobile-link" data-nav-link>Projects</a></li>
 
           <li class="navbar__mobile-cta-item">
             <a href="/pages/contact.html" class="btn btn-primary w-full">Contact Us</a>
@@ -370,7 +354,7 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
           <li><a href="/pages/services/automation-consultancy.html" class="footer__link">Automation Consultancy</a></li>
           <li><a href="/pages/services/security-solutions.html" class="footer__link">Security Solutions</a></li>
           <li><a href="/pages/services/smart-infrastructure.html" class="footer__link">Smart Infrastructure</a></li>
-          <li><a href="/pages/services/engineering-services.html" class="footer__link">Engineering Services</a></li>
+          <li><a href="/pages/services/engineering-services.html" class="footer__link">Agricultural Automation</a></li>
         </ul>
       </div>
 
@@ -384,7 +368,6 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
           <li><a href="/pages/products/plc-panels.html" class="footer__link">PLC Panels</a></li>
           <li><a href="/pages/products/vfd-panels.html" class="footer__link">VFD Panels</a></li>
           <li><a href="/pages/products/servo-panels.html" class="footer__link">Servo Panels</a></li>
-          <li><a href="/pages/products/custom-control-panels.html" class="footer__link">Custom Control Panels</a></li>
         </ul>
       </div>
 
@@ -394,7 +377,6 @@ const FOOTER_HTML = `<footer class="footer" id="site-footer" role="contentinfo">
         <ul class="footer__col-list" role="list">
           <li><a href="/pages/about.html" class="footer__link">About Us</a></li>
           <li><a href="/pages/industries.html" class="footer__link">Industries</a></li>
-          <li><a href="/pages/projects.html" class="footer__link">Projects</a></li>
           <li><a href="/pages/contact.html" class="footer__link">Contact</a></li>
         </ul>
       </div>
