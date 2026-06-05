@@ -44,14 +44,18 @@
     ═══════════════════════════════════════════════════════ -->
     <section class="hero hero--page" aria-label="About Supreme Controls">
       <div class="hero__bg">
-        <img
-          src="../assets/images/hero/about-us-hero.jpg"
-          alt="Supreme Controls engineering team at work"
-          class="hero__image"
-          loading="eager"
-          fetchpriority="high"
-          onerror="this.style.display='none'"
-        >
+        <picture>
+          <source media="(max-width: 768px)" srcset="../assets/images/hero/about-us-mobile.avif" type="image/avif">
+          <source srcset="../assets/images/hero/about-us.avif" type="image/avif">
+          <img
+            src="../assets/images/hero/about-us.avif"
+            alt="Supreme Controls engineering team at work"
+            class="hero__image"
+            loading="eager"
+            fetchpriority="high"
+            onerror="this.style.display='none'"
+          >
+        </picture>
         <div class="hero__overlay" aria-hidden="true"></div>
       </div>
 

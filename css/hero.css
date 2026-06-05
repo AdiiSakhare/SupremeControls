@@ -18,9 +18,16 @@
 
 /* ── Inner page hero variant ──────────────────────────────── */
 .hero--page {
-  min-height: 90vh;
+  min-height: 100vh;
   align-items: center;
   padding-bottom: var(--space-16);
+}
+
+@media (max-width: 1024px) {
+  .hero,
+  .hero--page {
+    min-height: 80vh;
+  }
 }
 
 @media (max-width: 768px) {
@@ -32,7 +39,6 @@
 
 @media (max-width: 480px) {
   .hero--page {
-    min-height: 60vh;
     padding-bottom: var(--space-10);
   }
 }
@@ -147,7 +153,7 @@
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     align-items: flex-end;
     padding-bottom: var(--space-16);
   }

@@ -36,7 +36,11 @@
     <!-- HERO -->
     <section class="hero hero--page" aria-label="Industries">
       <div class="hero__bg">
-        <img src="../assets/images/hero/industries.jpg" alt="Industrial operations" class="hero__image" loading="eager" fetchpriority="high">
+        <picture>
+          <source media="(max-width: 768px)" srcset="../assets/images/hero/industries-mobile.avif" type="image/avif">
+          <source srcset="../assets/images/hero/industries.avif" type="image/avif">
+          <img src="../assets/images/hero/industries.avif" alt="Industrial operations" class="hero__image" loading="eager" fetchpriority="high">
+        </picture>
         <div class="hero__overlay" aria-hidden="true"></div>
       </div>
       <div class="container hero__content">

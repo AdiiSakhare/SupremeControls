@@ -5,7 +5,19 @@
 
 /* ── Contact hero ────────────────────────────────────────── */
 .hero--contact {
-  min-height: 90vh;
+  min-height: 100vh;
+}
+
+@media (max-width: 1024px) {
+  .hero--contact {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero--contact {
+    min-height: 70vh;
+  }
 }
 
 /* ── Main contact layout ──────────────────────────────────── */
