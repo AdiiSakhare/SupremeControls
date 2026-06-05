@@ -66,7 +66,7 @@
 /* Fallback background when no image loaded */
 .hero__bg:not(:has(img[src])),
 .hero__bg img[style*="display: none"] ~ * {
-  background-color: var(--color-zinc-900);
+  background-color: var(--color-white);
 }
 
 /* Dark overlay */
@@ -84,7 +84,7 @@
 /* Dark fallback when no image */
 .hero:not(:has(.hero__image[src])) .hero__bg,
 .hero .hero__bg {
-  background-color: var(--color-zinc-900);
+  background-color: var(--color-white);
 }
 
 /* ── Content ──────────────────────────────────────────────── */
