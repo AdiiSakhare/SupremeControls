@@ -53,7 +53,7 @@
 }
 
 .product-detail__image {
-  aspect-ratio: 4/3;
+  aspect-ratio: 3/4;
   border-radius: var(--radius-xl);
   overflow: hidden;
   background-color: var(--color-zinc-100);
@@ -74,6 +74,16 @@
 .product-detail__desc {
   color: var(--color-zinc-600);
   line-height: var(--leading-relaxed);
+}
+
+.product-detail__quote-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .product-detail__quote-btn {
+    display: inline-flex;
+  }
 }
 
 /* ── Spec table ───────────────────────────────────────────── */
